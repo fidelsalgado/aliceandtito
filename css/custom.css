@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../resources/fonts/Raleway-Light.ttf');
+}
+
+
+
+body {
+  font-family: Raleway;
+  font-weight: 100;
+}
+
+a{text-decoration: none;
+color:black;}
+
+a:hover{
+  color: #fece06;
+  transition: color 1s;
+}
+
+
+a:visited{
+  color:black;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+div#topbar1{
+position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: black;
+    height: 6.5rem;
+    width: 100%;
+    z-index: 99;
+    display: block;
+
+}
+
+
+.bold{
+  font-weight: bold;
+}
+
+
+#buttonHead{
+  margin-top: 1.25em;
+  float: left;
+  display: inline-block;
+  letter-spacing: .2em;
+  position: relative;
+  margin-left: 25px;
+}
+
+.menu{
+  margin-top: 1.25em;
+  float: right;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
+.menuItem{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+
+p.button{
+  font-size: 20px;
+  text-align: left;
+  margin-left: -.5em;
+  color:white;
+}
+
+.banner{
+    height: 100vh;
+    width: auto;
+    margin-top: 0em;
+
+.section{
+  margin-bottom: 3em;
+}
+
+
+
+.title{
+  font-size: 18pt;
+  color: black;
+  
+}
+
+
+footer{
+    height: 13rem;
+    width: 100%;
+    margin-top: 1rem;
+        font-size: 8pt;
+
+}
+.footerContent{
+      text-align: center;
+
+  background-color: #fece06;
+    color: white;
+}
+#wishes{
+  font-size: 12pt;
+}
+a.portfolio{
+  color: white;
+}
+
+
