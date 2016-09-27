@@ -12,13 +12,16 @@
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
 
   
 
@@ -30,7 +33,7 @@
 <body>
 
   <div id="topbar1">
-    <a href="#" id="buttonHead"><span class = "bold">ALICE & TITO</a>
+    <a href="#" id="buttonHead"><span class = "bold">ALICE &amp; TITO</a>
     <div class="menu">
       <a href="#rsvp" class="menuItem">RSVP</a>
       <a href="#location" class="menuItem" >LOCATION</a>
@@ -39,45 +42,65 @@
   </div>
   
   <div class = "banner">
-    <div class = "container">
-      <div class = "row center">
-        <div id = "hero">
+    <div id = "clock">
+        <div>
+          <span class="days"></span>
+          <div class="smalltext">DAYS</div>
+        </div>
+        <div>
+          <span class="hours"></span>
+          <div class="smalltext">HOURS</div>
+        </div>
+        <div>
+          <span class="minutes"></span>
+          <div class="smalltext">MINUTES</div>
+        </div>
+        <div>
+          <span class="seconds"></span>
+          <div class="smalltext">SECONDS</div>
+        </div>
+        <div>UNTIL <span class = "yellow-text">WEDDING</span> DAY
         </div>
       </div>
-    </div>
   </div>
   <div class = "container">
-    <div class = "row section">
-      <div id = "rsvp">
-      </div>
+    <div class = "row" id = "rsvp">
+        <div class="one-half column" id = "rsvp">
+          <h1 class = "didot">RSVP</h1>
+          <p id = "respond">PLEASE RESPOND BY<br><b>MONDAY, 17 NOVEMBER 2016</b>
+          </p>
+          <form>
+            <div class = "row">
+              <div class = "one-half column">
+                <input type="radio" class = "square-radio">
+                <span class="label-body">Yes - Let’s celebrate!</span>
+              </div>
+              <div class = "one-half column">
+                <input type="radio">
+                <span class="label-body">Sorry - can’t make it...!</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="one-half column verticalLine yellow" id = "rsvpImage">a</div>
     </div>
-    <div class = "row section">
-      <div id = "location">
-      </div>
-    </div>
-    <div class = "row section">
-      <div id = "bio">
-      </div>
-    </div>
-
   </div>
+   
 
 
 
-<footer>
+
+<footer class = "yellow">
   <div class = "footerContent">
     <span id = "wishes">Best Wishes Alice &amp; Tito!</span><br>
     &#169; 2016 All Rights Reserved<br>
     powered by by <a class = "portfolio" href = "http://fidelsalgado.com">Fidel</a> &amp; <a class = "portfolio" href = "http://jason-chen.net">Jason</a><br>
   </div>
 </footer>
+</body>
 
 <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
-  <script src="js/util.js"></script>
-  <script>
-    init()
-  </script>
-</body>
+<script src="js/util.js"></script>
 </html>

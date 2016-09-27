@@ -2,20 +2,50 @@
   font-family: 'Raleway';
   src: url('../resources/fonts/Raleway-Light.ttf');
 }
-
-
+@font-face {
+  font-family: 'Didot';
+  src: url('../resources/fonts/didot.ttf');
+}
 
 body {
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-weight: 100;
+  letter-spacing: .2em;
 }
+
+/*
+OVERRIDES
+*/
+.container{
+  max-width: 1028px;
+  height: 100vh;
+}
+.section{
+  margin-bottom: 3em;
+}
+
+/*
+CUSTOMS
+*/
+
+.didot{
+  font-family: 'Didot'
+}
+
+.yellow{
+    background-color: #ffce03;
+}
+.yellow-text{
+  color: #ffce03;
+}
+
 
 a{text-decoration: none;
 color:black;}
 
 a:hover{
-  color: #fece06;
-  transition: color 1s;
+  color: #ffce03;
+  transition: color .5s;
 }
 
 
@@ -68,6 +98,9 @@ position: fixed;
   margin-left: 1em;
 }
 
+.verticalLine {
+    border-left: 1px solid #000;
+}
 
 p.button{
   font-size: 20px;
@@ -75,17 +108,58 @@ p.button{
   margin-left: -.5em;
   color:white;
 }
+#clock{
+  padding-top: 6.5rem;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .2em;
+}
+#clock div {
+  display: inline-block;
+  font-size: 18pt;
+}
+#clock span:not(:last-child){
+  font-size: 72pt;
+}
 
 .banner{
     height: 100vh;
     width: auto;
     margin-top: 0em;
-
-.section{
-  margin-bottom: 3em;
+    background-image: url(https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13247830_10209566646821584_7811445323599960426_o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
+p#respond{
+  font-size: 18pt;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+div#rsvp{
+  padding-top: 2rem;
+}
+
+div#rsvp h1{
+  text-align: center;
+  font-size: 48pt;
+}
+form{
+  background-color: red;
+  margin-top: 5rem;
+}
+span.label-body{
+  letter-spacing: 0;
+}
+.square-radio{
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
 
 .title{
   font-size: 18pt;
@@ -95,23 +169,24 @@ p.button{
 
 
 footer{
-    height: 13rem;
-    width: 100%;
-    margin-top: 1rem;
-        font-size: 8pt;
-
+  height: 13rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 10pt;
+  text-align: center;
+  padding-top: 4.5rem;
+  letter-spacing: 0;
 }
-.footerContent{
-      text-align: center;
 
-  background-color: #fece06;
-    color: white;
+.footerContent{
+  color: white;
 }
 #wishes{
-  font-size: 12pt;
+  letter-spacing: .2rem;
+  font-size: 14pt;
 }
 a.portfolio{
-  color: white;
+  color: #000;
 }
 
 

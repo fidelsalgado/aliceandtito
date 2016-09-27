@@ -1,71 +1,41 @@
-function init() {
-    
-    /* ---- VARIABLES ---- */
-    var $nav = $('#topbar1'),
-        $body = $('body'),
-        $window = $(window),
-        $popoverLink = $('[data-popover]'),
-        navOffsetTop = $nav.offset().top-65,
-        $document = $(document);
-
-    /* ---- HELPER FUNCTIONS ---- */
-    function smoothScroll(e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-65
-        }, 200, 'swing', function () {
-            window.location.hash = target;
-        });
-    }
-
-    function openPopover(e) {
-        e.preventDefault()
-        var popover = $($(this).data('popover'));
-        if (popover.hasClass('open')) {
-            closePopover();
-        } else {
-            popover.addClass('open');
-            $('.mobile-menu').addClass('active');
-        }
-        e.stopImmediatePropagation();
-    }
-
-    function closePopover() {
-        if($('.popover.open').length > 0) {
-            $('.popover').removeClass('open');
-            $('.mobile-menu').removeClass('active');
-        }
-    }
-
-    /* ---- EVENT LISTENERS ---- */
-    $("#button").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#elementtoScrollToID").offset().top
-        }, 2000);
-    });
-
-    $("#topSearch").on('focus', function () {
-        $(this).parent('label').addClass('active');
-    });
-
-    $("#topSearch").on('blur', function () {
-        if($(this).val().length == 0)
-            $(this).parent('label').removeClass('active');
-    });
-
-    $('.clickable-pillar').hover(function () {
-        $(this).addClass('animated pulse')
-    }, function () {
-        $(this).removeClass('animated pulse')
-    })
-
-
-    /* ---- FUNCTIONALITY ---- */
-    $popoverLink.on('click', openPopover)
-    $window.on('click', closePopover)
-    $('a[href^="#"]').on('click', smoothScroll)
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
 }
+
+
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  console.log(clock);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock(){
+    var t = getTimeRemaining(endtime);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    if(t.total<=0){
+        clearInterval(timeinterval);
+    }
+    }
+
+    updateClock(); // run function once at first to avoid delay
+    var timeinterval = setInterval(updateClock,1000);
+    }
+var deadline = '2017-04-22';
+
+initializeClock('clock', deadline);
