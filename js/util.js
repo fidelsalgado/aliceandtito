@@ -12,11 +12,13 @@ function getTimeRemaining(endtime) {
     'seconds': seconds
   };
 }
-
+function removeClock(){
+  var clock = document.getElementById('clock');
+  clock.parentNode.removeChild(clock);
+}
 
 function initializeClock(id, endtime){
   var clock = document.getElementById(id);
-  console.log(clock);
   var daysSpan = clock.querySelector('.days');
   var hoursSpan = clock.querySelector('.hours');
   var minutesSpan = clock.querySelector('.minutes');
@@ -24,18 +26,23 @@ function initializeClock(id, endtime){
 
   function updateClock(){
     var t = getTimeRemaining(endtime);
+
+    if(t.total<=0){
+      removeClock();
+      return;
+    }
     daysSpan.innerHTML = t.days;
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
     if(t.total<=0){
-        clearInterval(timeinterval);
+      clearInterval(timeinterval);
     }
-    }
+  }
 
-    updateClock(); // run function once at first to avoid delay
-    var timeinterval = setInterval(updateClock,1000);
-    }
-var deadline = '2017-04-22';
+  updateClock(); // run function once at first to avoid delay
+  var timeinterval = setInterval(updateClock,1000);
+}
+var deadline = "April 22, 2017";
 
 initializeClock('clock', deadline);
