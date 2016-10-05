@@ -11,6 +11,7 @@ body {
   font-family: 'Raleway';
   font-weight: 100;
   letter-spacing: .2em;
+  color: #000;
 }
 
 /*
@@ -140,7 +141,7 @@ p#respond{
   letter-spacing: .2em;
 }
 div#rsvp{
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 div#rsvp h1{
@@ -148,17 +149,49 @@ div#rsvp h1{
   font-size: 48pt;
 }
 form{
-  background-color: red;
+  /*background-color: red;*/
   margin-top: 5rem;
+}
+form div.row{
+  margin-bottom: 2rem;
 }
 span.label-body{
   letter-spacing: 0;
 }
-.square-radio{
+
+
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
     border: 1px solid #000;
     width: 20px;
     height: 20px;
     position: relative;
+}
+
+input[type="text"].form-underline{
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+input[type="text"].form-underline.num{
+  text-align: center;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+#labelMargin{
+  margin-top: 1rem;
+  margin-left: .5rem;
+  letter-spacing: 0;
 }
 
 .title{
@@ -167,6 +200,24 @@ span.label-body{
   
 }
 
+#submitRow{
+  text-align: center;
+}
+
+input.button{
+  border: 1px solid #000;
+  letter-spacing: .5rem;
+  color: #000;
+  border-radius: 0;
+  transition: border .5s, color .5s;
+}
+#rsvpInfo{
+  font-size: 10pt;
+}
+
+#rsvpBlurb{
+  font-size: 12pt;
+}
 
 footer{
   height: 13rem;
