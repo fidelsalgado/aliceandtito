@@ -31,13 +31,14 @@
 
 </head>
 <body>
-
+  <div id = "top">
+  </div>
   <div id="topbar1">
-    <a href="#" id="buttonHead"><span class = "bold">ALICE &amp; TITO</a>
+    <a href="#top" id="buttonHead"><span class = "bold">ALICE &amp; TITO</a>
     <div class="menu">
       <a href="#rsvp" class="menuItem">RSVP</a>
       <a href="#location" class="menuItem" >LOCATION</a>
-      <a href="#bio" class="menuItem">BIO</a>
+      <a href="#loveStory" class="menuItem">LOVE STORY</a>
     </div>
   </div>
   
@@ -62,7 +63,7 @@
         <div>UNTIL <span class = "yellow-text">WEDDING</span> DAY
         </div>
       </div>
-      <video loop controls autoplay>
+      <video muted controls autoplay>
         <source src = "https://s3-us-west-2.amazonaws.com/aliceandtito/Alice.Tito+Save+the+Date.mp4" type = "video/mp4">
       </video>
 
@@ -71,7 +72,7 @@
   <div class = "container section">
     <br><br>
     <div class = "row" id = "rsvp">
-        <div class="one-half column" id = "rsvp">
+        <div class="one-half column rsvp" id = "rsvpform">
           <h1 class = "didot">RSVP</h1>
           <p id = "respond">PLEASE RESPOND BY<br><b>MONDAY, 17 NOVEMBER 2016</b>
           </p>
@@ -152,9 +153,11 @@
           </form>
         </div>
 
-        <div class="one-half column" id = "rsvpImage">
+        <div class="one-half column rsvp" id = "rsvpImage">
+          <div class = "borderLeft">
+          </div>
           <div class = "row" id = "image">
-              <img class = "yellowBorder" src = "http://www.driverluxurycars.com/wp-content/uploads/2016/06/mariage-84417.jpg"/>
+              <img class = "yellowBorder" src = "resources/images/couple.jpg"/>
 
             </div>
           <div class = "row didot spaced">
@@ -167,6 +170,14 @@
         </div>
           
           
+        </div>
+        <div class = "row gifts">
+          <h1 class = "didot">GIFTS</h1>
+          <p>
+            With all that we have, we've been truly blessed.<br>
+Your presence and prayers are all that we request.<br>
+But if you desire to give nonetheless,<br> Monetary gift is one we suggest.<br>
+          </p>
         </div>
     </div>
     <div class = "row" id = "location">
@@ -207,18 +218,13 @@
     </div>
 
 
-    <div class = "row" id = "bio">
+    <div class = "row" id = "loveStory">
       <div class = "container">
         <div class = "row">
-          <h1>Biography</h1>
+          <h1>Love Story</h1>
         </div>
         <div class = "row">
-          <div class = "six columns card">
-            <h4>Alice</h4>
-          </div>
-          <div class = "six columns card">
-            <h4>Tito</h4>
-          </div>
+          <img class = "lovestory" src = "resources/images/lovestory.jpg"/>
         </div>
 
       </div>

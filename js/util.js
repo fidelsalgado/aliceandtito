@@ -46,3 +46,12 @@ function initializeClock(id, endtime){
 var deadline = "April 22, 2017";
 
 initializeClock('clock', deadline);
+
+
+//clickTo functions
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});

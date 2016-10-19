@@ -23,7 +23,10 @@ OVERRIDES
 
 }
 .section{
-  margin-bottom: 3em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 5em;
+  height: 100%;
 }
 
 /*
@@ -96,10 +99,12 @@ position: fixed;
   position: relative;
   display: inline-block;
   margin-right: 25px;
+  z-index: 11;
 }
 .menuItem{
   display: inline-block;
   margin-left: 1em;
+  cursor: pointer;
 }
 
 
@@ -113,8 +118,8 @@ p.button{
   color:white;
 }
 #clock{
-  padding-top: 6.5rem;
-  z-index: 10000;
+  padding-top: 6.6%;
+  z-index: 10;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -131,7 +136,7 @@ p.button{
 }
 
 .banner{
-    height: 100vh;
+    max-height: 100vh;
     width: auto;
 
       z-index: 0;
@@ -139,6 +144,7 @@ p.button{
 }
 .banner video{
     max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     z-index: 1;
@@ -152,11 +158,13 @@ p#respond{
   line-height: 1;
   letter-spacing: .2em;
 }
-div#rsvp{
+div.rsvp{
   margin-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
-div#rsvp h1{
+div.didot h1{
   text-align: center;
   font-size: 48pt;
 }
@@ -230,18 +238,30 @@ input.button{
 #rsvpBlurb{
   font-size: 12pt;
 }
-.yellowBorder{
+img.yellowBorder {
   border: 7.5px solid #ffce03;
   padding: 20px;
+  max-height: 550px;
+  width: auto;
 }
 
+#rsvpform{
+  margin-left: -4%;
+  margin-right: 4%;
+}
 
 #rsvpImage{
   margin-top: 5rem;
-  padding-left: 5rem;
   text-align: center;
-  border-left: 1px solid #000;
   margin-bottom: 3rem;
+}
+.borderLeft{
+    border-left: 1px solid #000;
+  position: absolute;
+  bottom: 25%;  
+  top: 25%;
+
+  margin-left: -2.5rem;
 }
 
 img#sunflower{
@@ -284,9 +304,19 @@ a.map{
   font-size: 18pt;
   color: #ffce03;
 }
-#bio{
+#loveStory{
   padding-top: 10rem;
   padding-bottom: 5rem;
+  text-align: center;
+}
+img.lovestory{
+  max-height: 800px;
+  width: auto;
+    border: 7.5px solid #ffce03;
+  padding: 20px;
+}
+
+.gifts{
   text-align: center;
 }
 
