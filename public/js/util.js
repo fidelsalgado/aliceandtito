@@ -55,3 +55,11 @@ $('a').click(function(){
     }, 1000);
     return false;
 });
+
+//sending form information
+$('#rsvpform').submit(function() {
+  console.log("called!");
+  alert("We will be accepting RSVPs soon. Please comeback later.");
+  /* TODO: handle form here */
+  return false;
+});
