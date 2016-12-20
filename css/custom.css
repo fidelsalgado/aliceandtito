@@ -19,7 +19,7 @@ OVERRIDES
 */
 .container{
   max-width: 1028px;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 .section{
@@ -137,7 +137,7 @@ p.button{
 
 .banner{
     max-height: 100vh;
-    width: auto;
+    width: 100%;
 
       z-index: 0;
 
@@ -217,7 +217,7 @@ input[type="text"].form-underline.num{
 .title{
   font-size: 18pt;
   color: black;
-  
+
 }
 
 #submitRow{
@@ -242,7 +242,7 @@ img.yellowBorder {
   border: 7.5px solid #ffce03;
   padding: 20px;
   max-height: 550px;
-  width: auto;
+  width: calc(100% - 110px);
 }
 
 #rsvpform{
@@ -258,7 +258,7 @@ img.yellowBorder {
 .borderLeft{
     border-left: 1px solid #000;
   position: absolute;
-  bottom: 25%;  
+  bottom: 25%;
   top: 25%;
 
   margin-left: -2.5rem;
@@ -311,7 +311,7 @@ a.map{
 }
 img.lovestory{
   max-height: 800px;
-  width: auto;
+  width: calc(100% - 15px);
     border: 7.5px solid #ffce03;
   padding: 20px;
 }
@@ -341,4 +341,51 @@ a.portfolio{
   color: #000;
 }
 
+@media only screen and (max-device-width: 768px) {
+  .menu{
+    display: none;
+  }
+  .div .row{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+    margin:0;
+  }
+  .banner{
+    max-height: 100%;
+    width: 100%;
+  }
+  img.lovestory{
+    border: 0px;
+    width: 100%;
+    padding: 0;
+  }
+  img.yellowBorder{
+    border: 0px;
+    width: 100%;
+    padding: 0;
+  }
+  h1{
+    padding-left: 1rem;
+  }
 
+  body{
+    font-size: 12pt;
+  }
+  #clock div {
+    display: inline-block;
+    font-size: 4pt;
+  }
+  #clock span:not(:last-child){
+    font-size: 18pt;
+  }
+  #clock{
+    margin-top: 5rem;
+  }
+  video{
+      margin-top: 5rem;
+
+  }
+
+}
