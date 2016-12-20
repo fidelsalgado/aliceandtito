@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../resources/fonts/Raleway-Light.ttf');
+}
+@font-face {
+  font-family: 'Didot';
+  src: url('../resources/fonts/didot.ttf');
+}
+
+body {
+  font-family: 'Raleway';
+  font-weight: 100;
+  letter-spacing: .2em;
+  color: #000;
+}
+
+/*
+OVERRIDES
+*/
+.container{
+  max-width: 1028px;
+  min-height: 100vh;
+
+}
+.section{
+  padding-bottom: 3em;
+  padding-top: 3em;
+  margin-bottom: 5em;
+  height: 100%;
+}
+
+/*
+CUSTOMS
+*/
+.spaced{
+  letter-spacing: .2em;
+}
+.didot{
+  font-family: 'Didot'
+}
+
+.yellow{
+    background-color: #ffce03;
+}
+.yellow-text{
+  color: #ffce03;
+}
+
+
+a{text-decoration: none;
+color:black;}
+
+a:hover{
+  color: #ffce03;
+  transition: color .5s;
+}
+
+
+a:visited{
+  color:black;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+div#topbar1{
+position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: black;
+    height: 6.5rem;
+    width: 100%;
+    z-index: 99;
+    display: block;
+
+}
+
+
+.bold{
+  font-weight: bold;
+}
+
+
+#buttonHead{
+  margin-top: 1.25em;
+  float: left;
+  display: inline-block;
+  letter-spacing: .2em;
+  position: relative;
+  margin-left: 25px;
+}
+
+.menu{
+  margin-top: 1.25em;
+  float: right;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+  z-index: 11;
+}
+.menuItem{
+  display: inline-block;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+
+
+
+
+p.button{
+  font-size: 20px;
+  text-align: left;
+  margin-left: -.5em;
+  color:white;
+}
+#clock{
+  padding-top: 6.6%;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .2em;
+  position: absolute;
+
+}
+#clock div {
+  display: inline-block;
+  font-size: 18pt;
+}
+#clock span:not(:last-child){
+  font-size: 72pt;
+}
+
+.banner{
+    max-height: 100vh;
+    width: 100%;
+
+      z-index: 0;
+
+}
+.banner video{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+
+
+p#respond{
+  font-size: 18pt;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+div.rsvp{
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 10rem;
+}
+
+div.didot h1{
+  text-align: center;
+  font-size: 48pt;
+}
+form{
+  /*background-color: red;*/
+  margin-top: 5rem;
+}
+form div.row{
+  margin-bottom: 1rem;
+}
+span.label-body{
+  letter-spacing: 0;
+}
+
+
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    -ms-appearance: checkbox;     /* not currently supported */
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+input[type="text"].form-underline{
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+input[type="text"].form-underline.num{
+  text-align: center;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+
+#labelMargin{
+  margin-top: 1rem;
+  margin-left: .5rem;
+  letter-spacing: 0;
+}
+
+.title{
+  font-size: 18pt;
+  color: black;
+
+}
+
+#submitRow{
+  text-align: center;
+}
+
+input.button{
+  border: 1px solid #000;
+  letter-spacing: .5rem;
+  color: #000;
+  border-radius: 0;
+  transition: border .5s, color .5s;
+}
+#rsvpInfo{
+  font-size: 10pt;
+}
+
+#rsvpBlurb{
+  font-size: 12pt;
+}
+img.yellowBorder {
+  border: 7.5px solid #ffce03;
+  padding: 20px;
+  max-height: 550px;
+  width: calc(100% - 110px);
+}
+
+#rsvpform{
+  margin-left: -4%;
+  margin-right: 4%;
+}
+
+#rsvpImage{
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.borderLeft{
+    border-left: 1px solid #000;
+  position: absolute;
+  bottom: 25%;
+  top: 25%;
+
+  margin-left: -2.5rem;
+}
+
+img#sunflower{
+  height: 65px;
+  width: 65px;
+  margin-left: 27.5px;
+}
+div #rsvpImage div h2{
+  margin-left: 27.5px;
+}
+
+#location{
+  background-color: #eee;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.card{
+  margin-top: 2.5rem;
+  background-color: #fff;
+  height: 100%;
+  letter-spacing: 0;
+}
+.card img{
+  max-height: 329px;
+}
+.info{
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+
+.info p{
+  line-height: 1.75rem;
+  font-size: 10pt;
+}
+p.date{
+  font-size: 12pt;
+}
+a.map{
+  font-size: 18pt;
+  color: #ffce03;
+}
+#loveStory{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+img.lovestory{
+  max-height: 800px;
+  width: calc(100% - 15px);
+    border: 7.5px solid #ffce03;
+  padding: 20px;
+}
+
+.gifts{
+  text-align: center;
+}
+
+footer{
+  height: 13rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 10pt;
+  text-align: center;
+  padding-top: 4.5rem;
+  letter-spacing: 0;
+}
+
+.footerContent{
+  color: white;
+}
+#wishes{
+  letter-spacing: .2rem;
+  font-size: 14pt;
+}
+a.portfolio{
+  color: #000;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .menu{
+    display: none;
+  }
+  .div .row{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+    margin:0;
+  }
+  .banner{
+    max-height: 100%;
+    width: 100%;
+  }
+  img.lovestory{
+    border: 0px;
+    width: 100%;
+    padding: 0;
+  }
+  img.yellowBorder{
+    border: 0px;
+    width: 100%;
+    padding: 0;
+  }
+  h1{
+    padding-left: 1rem;
+  }
+
+  body{
+    font-size: 12pt;
+  }
+  #clock div {
+    display: inline-block;
+    font-size: 4pt;
+  }
+  #clock span:not(:last-child){
+    font-size: 18pt;
+  }
+  #clock{
+    margin-top: 5rem;
+  }
+  video{
+      margin-top: 5rem;
+
+  }
+
+
+img.stretch-image{
+  zoom:1.8;  /* I don't know what I'm doing please help */
+}
