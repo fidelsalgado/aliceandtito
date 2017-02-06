@@ -279,19 +279,31 @@ div #rsvpImage div h2{
   padding-bottom: 5rem;
 }
 
+#travel{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
 .card{
   margin-top: 2.5rem;
   background-color: #fff;
   height: 100%;
   letter-spacing: 0;
 }
+
+.othercard{
+  margin-top: 2.5rem;
+  background-color: #eee;
+  height: 100%;
+  letter-spacing: 0;
+}
+
 .card img{
   max-height: 329px;
 }
 .info{
   padding: 1rem 3rem 1rem 3rem;
 }
-
 
 .info p{
   line-height: 1.75rem;
