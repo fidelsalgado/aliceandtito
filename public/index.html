@@ -74,7 +74,7 @@
           <h1 class = "didot">RSVP</h1>
           <p id = "respond">PLEASE RESPOND BY<br><b>WEDNESDAY, 22 MARCH 2017</b>
           </p>
-          <form id="rsvpform">
+          <form id="rsvpform" action="http://sleepy-forest-19977.herokuapp.com/rsvps" method="post">
             <div class = "row">
               <div class = "one-half column">
                 <input type="radio" class = "square-radio" name="rsvpcheck">
@@ -85,52 +85,16 @@
                 <span class="label-body">Sorry - can’t make it...!</span>
               </div>
             </div>
-            <!--<div class = "row">-->
-              <!--<div class = "one column">-->
-                <!--<input type = "text" class = "u-full-width form-underline num" id = "attending">  -->
-              <!--</div>-->
-              <!--<div class = "eleven columns" id = "labelMargin">-->
-                <!--Number Attending-->
-              <!--</div>-->
-            <!--</div>-->
             <div class = "row">
               <div class = "twelve columns">
-                <input type = "text" class = "u-full-width form-underline" placeholder = "Name">
+                <input type = "text" class = "u-full-width form-underline" placeholder = "Name" name="name">
               </div>
             </div>
             <div class = "row">
               <div class = "twelve columns">
-                <input type = "text" class = "u-full-width form-underline" placeholder = "Email">
+                <input type = "text" class = "u-full-width form-underline" placeholder = "Email" name="email">
               </div>
             </div>
-            <!--<div class = "row">-->
-              <!--<div class = "twelve columns">-->
-                <!--<input type = "text" class = "u-full-width form-underline" placeholder = "Song Requests? (optional)">-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<div class = "row">-->
-              <!--<div class = "three columns" id = "labelMargin">-->
-                <!--Menu Options |-->
-              <!--</div>-->
-              <!--<div class = "one column">-->
-                <!--<input type = "text" class = "u-full-width form-underline num" id = "beef">  -->
-              <!--</div>-->
-              <!--<div class = "two columns" id = "labelMargin">-->
-                <!--Beef-->
-              <!--</div>-->
-              <!--<div class = "one column">-->
-                <!--<input type = "text" class = "u-full-width form-underline num" id = "salmon">  -->
-              <!--</div>-->
-              <!--<div class = "two columns" id = "labelMargin">-->
-                <!--Salmon-->
-              <!--</div>-->
-              <!--<div class = "one column">-->
-                <!--<input type = "text" class = "u-full-width form-underline num" id = "veggie">  -->
-              <!--</div>-->
-              <!--<div class = "two columns" id = "labelMargin">-->
-                <!--Veggie  -->
-              <!--</div>-->
-            <!--</div>-->
               
             <div class = "row">
               <div class = "twelve columns" id = "submitRow">

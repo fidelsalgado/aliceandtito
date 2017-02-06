@@ -57,12 +57,12 @@ $('a').click(function(){
 });
 
 //sending form information
-$('#rsvpform').submit(function() {
-  console.log("called!");
-  alert("We will be accepting RSVPs soon. Please comeback later.");
-  /* TODO: handle form here */
-  return false;
-});
+// $('#rsvpform').submit(function() {
+//   console.log("called!");
+//   alert("We will be accepting RSVPs soon. Please comeback later.");
+//   /* TODO: handle form here */
+//   return false;
+// });
 
 var slideIndex = 1;
 showSlides(slideIndex);
