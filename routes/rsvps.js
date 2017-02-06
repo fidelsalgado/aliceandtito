@@ -33,7 +33,7 @@ router.post('/', function(req, res, next) {
         }, function(err, result) {
           console.log("Successfull insert!");
           console.log("err = " + err);
-          console.log("result = " + result);
+          console.log("result = " + JSON.stringify(result));
         });
       });
     }
